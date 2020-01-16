@@ -13,4 +13,4 @@ Current tools:
 
 ## Hosted at:
 
-Docker Hub: https://hub.docker.com/repository/docker/douglasq/kubectl
+Quay: https://quay.io/repository/tfgco/kubectl
