@@ -11,6 +11,7 @@ Current tools:
 - `helm v3.0.0`
 - `git v2.22.2`
 - `make v4.2.1`
+- `python3 v3.7.5-r1`
 
 **Check other branches** for different tags with other tools, like cli from cloud providers, etc..
 
