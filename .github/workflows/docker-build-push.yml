@@ -40,7 +40,7 @@ jobs:
     - name: Push the latest aws-cli Docker image
       run: docker push tfgco/kubectl:aws-cli
     - name: Tag the release aws-cli Docker image
-      run: docker tag tfgco/kubectl:latest tfgco/kubectl:${{steps.vars.outputs.tag}}-aws-cli
+      run: docker tag tfgco/kubectl:aws-cli tfgco/kubectl:${{steps.vars.outputs.tag}}-aws-cli
     - name: Push the tagged release aws-cli Docker image
       run: docker push tfgco/kubectl:${{steps.vars.outputs.tag}}-aws-cli
   quayio-build-push:
@@ -59,7 +59,7 @@ jobs:
     - name: Push the latest Docker image
       run: docker push quay.io/tfgco/kubectl:latest
     - name: Tag the release Docker image
-      run: docker tag quay.io/tfgco/kubectl:latest tfgco/kubectl:${{steps.vars.outputs.tag}} 
+      run: docker tag quay.io/tfgco/kubectl:latest quay.io/tfgco/kubectl:${{steps.vars.outputs.tag}} 
     - name: Push the tagged release Docker image
       run: docker push quay.io/tfgco/kubectl:${{steps.vars.outputs.tag}} 
   quayio-build-push-awscli:
@@ -78,6 +78,6 @@ jobs:
     - name: Push the latest aws-cli Docker image
       run: docker push quay.io/tfgco/kubectl:aws-cli
     - name: Tag the release aws-cli Docker image
-      run: docker tag quay.io/tfgco/kubectl:latest tfgco/kubectl:${{steps.vars.outputs.tag}}-aws-cli
+      run: docker tag quay.io/tfgco/kubectl:aws-cli quay.io/tfgco/kubectl:${{steps.vars.outputs.tag}}-aws-cli
     - name: Push the tagged release aws-cli Docker image
       run: docker push quay.io/tfgco/kubectl:${{steps.vars.outputs.tag}}-aws-cli
