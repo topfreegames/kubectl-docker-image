@@ -1,4 +1,4 @@
-name: Publish new image on Github Release
+name: Publish new Docker image
 
 on:
   release:

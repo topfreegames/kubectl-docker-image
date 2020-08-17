@@ -1,6 +1,12 @@
-[![Docker Repository on Quay](https://quay.io/repository/tfgco/kubectl/status "Docker Repository on Quay")](https://quay.io/repository/tfgco/kubectl)
+[![Docker Repository on Docker Hub](https://img.shields.io/badge/Docker%20Hub-ready-%23099cec)](https://hub.docker.com/r/tfgco/kubectl)
+[![Docker Repository on Quay](https://img.shields.io/badge/Quay.io-ready-%23BE0000)](https://quay.io/repository/tfgco/kubectl)
 
-[![Docker Repository on Docker Hub](https://img.shields.io/docker/v/tfgco/kubectl?label=docker%20hub "Docker Repository on Docker Hub")](https://hub.docker.com/r/tfgco/kubectl)
+[![Normal Docker Image Size](https://img.shields.io/docker/image-size/tfgco/kubectl/latest?label=normal%20image%20size&color=lightgray)](https://hub.docker.com/r/tfgco/kubectl)
+[![Aws-cli Docker Image Size](https://img.shields.io/docker/image-size/tfgco/kubectl/aws-cli?label=aws-cli%20image%20size&color=lightgray)](https://hub.docker.com/r/tfgco/kubectl)
+
+[![Normal Docker Image Size](https://img.shields.io/docker/v/tfgco/kubectl/latest?label=normal%20version&color=lightgray)](https://hub.docker.com/r/tfgco/kubectl)
+[![Aws-cli Docker Image Size](https://img.shields.io/docker/v/tfgco/kubectl/aws-cli?label=normal%20version&color=lightgray)](https://hub.docker.com/r/tfgco/kubectl)
+
 
 # Kubectl Image
 
