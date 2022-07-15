@@ -14,7 +14,7 @@ ARG KUBECTL_VERSION="v1.23.8"
 ARG HELM_VERSION="v3.9.0"
 
 RUN apk update && \
-    apk add bash=${BASH_VERSION} \
+    apk --no-cache add bash=${BASH_VERSION} \
             curl=${CURL_VERSION} \
             docker-cli=${DOCKER_CLI_VERSION} \
             docker-compose=${DOCKER_COMPOSE_VERSION} \
