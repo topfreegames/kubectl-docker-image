@@ -13,15 +13,13 @@ ARG OPENSSL_VERSION="1.1.1q-r0"
 ARG KUBECTL_VERSION="v1.23.8"
 ARG HELM_VERSION="v3.9.0"
 
-RUN apk update && \
-    apk --no-cache add bash=${BASH_VERSION} \
+RUN apk --no-cache upgrade
+RUN apk --no-cache add bash=${BASH_VERSION} \
             curl=${CURL_VERSION} \
             docker-cli=${DOCKER_CLI_VERSION} \
             docker-compose=${DOCKER_COMPOSE_VERSION} \
             git=${GIT_VERSION} \
-            make=${MAKE_VERSION} \
-            openssl=${OPENSSL_VERSION}
-
+            make=${MAKE_VERSION} 
 
 RUN curl https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl --output /bin/kubectl \ 
     && chmod u+x /bin/kubectl
