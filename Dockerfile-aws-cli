@@ -18,7 +18,8 @@ RUN apk --no-cache add bash=${BASH_VERSION} \
             docker-cli=${DOCKER_CLI_VERSION} \
             docker-compose=${DOCKER_COMPOSE_VERSION} \
             git=${GIT_VERSION} \
-            make=${MAKE_VERSION}
+            make=${MAKE_VERSION} \
+            aws-cli
 
 
 RUN curl https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl --output /bin/kubectl \ 
@@ -30,11 +31,5 @@ RUN curl https://get.helm.sh/helm-${HELM_VERSION}-linux-amd64.tar.gz  --output -
     && chmod +x /bin/helm \
     && rm -rf /tmp/linux-amd64
     
-RUN curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip --output - | \
-      busybox unzip -d /tmp/ - && \
-      chmod +x -R /tmp/aws && \
-      ./tmp/aws/install && \
-      rm -rf ./tmp/aws
-
 ENTRYPOINT [ "/bin/bash", "-c" ]
 CMD [ "bash" ]
