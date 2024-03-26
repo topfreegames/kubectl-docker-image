@@ -36,7 +36,8 @@ RUN apk --no-cache add bash=${BASH_VERSION} \
             curl=${CURL_VERSION} \
             docker-cli=${DOCKER_CLI_VERSION} \
             git=${GIT_VERSION} \
-            make=${MAKE_VERSION} 
+            make=${MAKE_VERSION} \
+            python3
 
 RUN curl https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl --output /bin/kubectl \ 
     && chmod u+x /bin/kubectl
