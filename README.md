@@ -1,7 +1,6 @@
 [![Build status](https://github.com/topfreegames/kubectl-docker-image/workflows/Publish%20new%20Docker%20image/badge.svg
 )](https://github.com/topfreegames/kubectl-docker-image/actions)
 [![Docker Repository on Docker Hub](https://img.shields.io/badge/Docker%20Hub-ready-%23099cec)](https://hub.docker.com/r/tfgco/kubectl)
-[![Docker Repository on Quay](https://img.shields.io/badge/Quay.io-ready-%23BE0000)](https://quay.io/repository/tfgco/kubectl)
 
 # Kubectl Image
 
@@ -29,6 +28,6 @@ On the aws-cli version we also includes the aws-cli v2 in it.
 
 ## Hosted at
 
-Quay: https://quay.io/repository/tfgco/kubectl
-
 Docker Hub: https://hub.docker.com/r/tfgco/kubectl
+
+Quay (Deprecated): https://quay.io/repository/tfgco/kubectl
